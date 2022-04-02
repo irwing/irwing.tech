@@ -12,9 +12,9 @@ describe('Test about me components', () => {
   test('should show a subtitle Social networks: and social links github, linkedin, instagram', async () => {
     const subtitle = 'Social networks:'
     const links = [
-      'github',
-      'linkedin',
-      'instagram'
+      'GitHub',
+      'LinkedIn',
+      'Instagram'
     ]
 
     const view = render(<AboutMe />)
