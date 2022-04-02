@@ -1,0 +1,17 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs: 
+  deploy: 
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Linter fix
+        run: npm run lint:fix
+      - name: Linter
+        run: npm run lint
+      - name: Test
+        run: npm test
