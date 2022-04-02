@@ -1,13 +1,11 @@
 import 'App.css'
+import Page from 'components/layouts/Page'
+import AboutMe from 'components/Pages/AboutMe'
 
 function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p className="bg-gray-100">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+    <div className="App bg-gray-800">
+      <Page page={<AboutMe />} />
     </div>
   )
 }
