@@ -31,17 +31,11 @@ const Nav = (props) => {
 
   return (
     <nav className={stylesNav}>
-      <a href="#" className="text-white p-2 hover:text-green-100 active:text-green-100">
-        Sobre mi
+      <a href="/" className="text-white p-2 hover:text-green-100 active:text-green-100">
+        About me
       </a>
-      <a href="#" className="text-white p-2 hover:text-green-100 active:text-green-100">
-        Blog
-      </a>
-      <a href="#" className="text-white p-2 hover:text-green-100 active:text-green-100">
-        Videos
-      </a>
-      <a href="#" className="text-white p-2 hover:text-green-100 active:text-green-100">
-        Proyectos
+      <a href="/projects" className="text-white p-2 hover:text-green-100 active:text-green-100">
+        Projects
       </a>
     </nav>
   )

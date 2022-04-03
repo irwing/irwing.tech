@@ -12,7 +12,7 @@ const AboutMe = () => {
             src="https://avatars.githubusercontent.com/u/499907?v=4"
             alt="Irwing Naranjo"
           />
-          <div className="flex flex-col mt-5 w-full">
+          <div className="flex flex-col mt-5 w-full text-center">
             <h2 className="text-white mb-3 font-bold hidden md:block">Social networks:</h2>
             <div className="flex ml-5 md:ml-0 flex-col">
               <a href="https://github.com/irwing" target="_blank" className="text-white underline underline-offset-4 mb-3 hover:text-green-100 active:text-green-100" rel="noreferrer">
