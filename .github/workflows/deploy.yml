@@ -1,0 +1,33 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs: 
+  deploy: 
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Cloning
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Node install
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Install
+        run: npm install
+      - name: Linter fix
+        run: npm run lint:fix
+      - name: Linter
+        run: npm run lint
+      - name: Test
+        run: npm test
+      - name: Deploy dev branch to Heroku
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ${{secrets.HEROKU_APP}}
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
