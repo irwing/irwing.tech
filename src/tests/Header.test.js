@@ -10,10 +10,8 @@ describe('Test layouts components', () => {
   })
   test('should show on the nav: Sobre mi, Blog, Videos, Proyectos', async () => {
     const links = [
-      'Sobre mi',
-      'Blog',
-      'Videos',
-      'Proyectos'
+      'About me',
+      'Projects'
     ]
     const view = render(<Header />)
     links.forEach(link => {
