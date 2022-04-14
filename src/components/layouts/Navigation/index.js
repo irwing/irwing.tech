@@ -9,7 +9,7 @@ const ToggleNav = (props) => {
     setIsOpenNav((prevState) => !prevState)
   }
 
-  const iconToggle = (action === 'open')
+  const iconToggle = (action === 'open'
     ? <FontAwesomeIcon icon={faBarsStaggered} />
     : <FontAwesomeIcon icon={faXmark} className="mt-5 text-4xl" />
 
@@ -32,7 +32,10 @@ const Nav = (props) => {
   return (
     <nav className={stylesNav}>
       <a href="/" className="text-white p-2 hover:text-green-100 active:text-green-100">
-        About me
+        About me!
+      </a>
+      <a href="/blog" className="text-white p-2 hover:text-green-100 active:text-green-100">
+        Blog
       </a>
       <a href="/projects" className="text-white p-2 hover:text-green-100 active:text-green-100">
         Projects
