@@ -8,9 +8,9 @@ describe('Test layouts components', () => {
     const view = render(<Header />)
     await view.getByText(title)
   })
-  test('should show on the nav: Sobre mi, Blog, Videos, Proyectos', async () => {
+  test('should show on the nav: About me, Projects', async () => {
     const links = [
-      'About me',
+      'About me!',
       'Projects'
     ]
     const view = render(<Header />)

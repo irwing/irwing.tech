@@ -35,7 +35,7 @@ const Nav = (props) => {
         About me!
       </a>
       <a href="/blog" className="text-white p-2 hover:text-green-100 active:text-green-100">
-        Blog
+        News
       </a>
       <a href="/projects" className="text-white p-2 hover:text-green-100 active:text-green-100">
         Projects
