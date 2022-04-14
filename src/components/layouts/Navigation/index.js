@@ -9,7 +9,7 @@ const ToggleNav = (props) => {
     setIsOpenNav((prevState) => !prevState)
   }
 
-  const iconToggle = (action === 'open'
+  const iconToggle = (action === 'open')
     ? <FontAwesomeIcon icon={faBarsStaggered} />
     : <FontAwesomeIcon icon={faXmark} className="mt-5 text-4xl" />
 
