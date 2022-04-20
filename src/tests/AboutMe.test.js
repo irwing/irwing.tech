@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom/extend-expect'
-import { render } from '@testing-library/react'
 import AboutMe from 'components/pages/AboutMe'
+import { render } from '@testing-library/react'
 
 describe('Test about me components', () => {
   test('should show a image the avatar on the left sidebar with alt Irwing Naranjo', async () => {
@@ -18,7 +18,7 @@ describe('Test about me components', () => {
     ]
 
     const view = render(<AboutMe />)
-    await view.getByText(subtitle)
+    view.getByText(subtitle)
     links.forEach(link => {
       view.getByText(link)
     })
