@@ -8,10 +8,10 @@ describe('Test layouts components', () => {
     const view = render(<Header />)
     await view.getByText(title)
   })
-  test('should show on the nav: Sobre mi, Blog, Videos, Proyectos', async () => {
+  test('Validation navigation', async () => {
     const links = [
-      'About me',
-      'Projects'
+      'Sobre mí!',
+      'Portafolio'
     ]
     const view = render(<Header />)
     links.forEach(link => {

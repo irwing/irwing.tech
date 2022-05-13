@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Page from 'components/layouts/Page'
-import AboutMe from 'components/Pages/AboutMe'
-import Blog from 'components/Pages/Blog'
-import Videos from 'components/Pages/Videos'
-import Projects from 'components/Pages/Projects'
+import AboutMe from 'components/pages/AboutMe'
+import Blog from 'components/blog/Blog'
+import Videos from 'components/pages/Videos'
+import Projects from 'components/pages/Projects'
 import 'App.css'
 
 const App = () => {
@@ -13,6 +13,7 @@ const App = () => {
         <Route path="/" element={<Page page={<AboutMe />} />} />
         <Route path="/projects" element={<Page page={<Projects />} />} />
         <Route path="/blog" element={<Page page={<Blog />} />} />
+        <Route path="/blog/:article" element={<Page page={<Blog />} />} />
         <Route path="/videos" element={<Page page={<Videos />} />} />
       </Routes>
     </BrowserRouter>

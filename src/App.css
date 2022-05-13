@@ -1,0 +1,27 @@
+article.article {
+  line-height: 1.7;
+  font-size: 1.1em;
+}
+
+article.article code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #262334;
+  color: #E3DC7C;
+  border-radius: 3px;
+  padding: 4px;
+  margin: 0;
+}
+
+article.article h3 {
+  margin-top: 10px;
+  font-size: 1.4em;
+  color: #E3DC7C;
+}
+
+article.article blockquote {
+  padding: 2px;
+  border-radius: 3px;
+  color: #900000;
+}

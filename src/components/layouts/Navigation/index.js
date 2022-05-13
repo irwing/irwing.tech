@@ -32,10 +32,13 @@ const Nav = (props) => {
   return (
     <nav className={stylesNav}>
       <a href="/" className="text-white p-2 hover:text-green-100 active:text-green-100">
-        About me
+        Sobre mí!
+      </a>
+      <a href="/blog" className="text-white p-2 hover:text-green-100 active:text-green-100">
+        Blog
       </a>
       <a href="/projects" className="text-white p-2 hover:text-green-100 active:text-green-100">
-        Projects
+        Portafolio
       </a>
     </nav>
   )
